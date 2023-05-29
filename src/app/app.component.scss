@@ -5,14 +5,10 @@ section {
   position: sticky;
   height: 100vh;
   width: 100vw;
-  background-color: #c5d8d1;
-  background-image: $gradient-top;
-//   background-image: linear-gradient(to bottom, #f4edea, #c5d8d1);
+  background-color: $background-main;
 
   &:nth-child(2n) {
-    background-color: #f4edea;
-//   background-image: linear-gradient(to top, #f4edea, #c5d8d1);
-
+    background-color: $background-secondary;
   }
 
   display: grid;
@@ -21,15 +17,3 @@ section {
     justify-self: center;
   }
 }
-// .presentacion {
-//   z-index: 1;
-// }
-// .sobre-mi {
-//   z-index: 1;
-// }
-// .mis-proyectos {
-//   z-index: 1;
-// }
-// .contacto {
-//   z-index: 1;
-// }
