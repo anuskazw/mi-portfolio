@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="header">
+        <ng-container *ngIf="false; else noicon">
+            <img class="icono" image="" alt="icono" />
+        </ng-container>
+        <ng-template #noicon>
+            <span class="icono">
+                <i class="bi bi-person"></i>
+            </span>
+        </ng-template>
+        <span class="title">anuska_dev</span>
+    </div>
+    <img class="imagen" [src]="imagen.src" [alt]="imagen.alt" />
+    <div class="footer">
+        <div class="left-icons">
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-chat"></i>
+            <i class="bi bi-send"></i>
+        </div>
+        <div class="right-icons">
+            <i class="bi bi-bookmark"></i>
+        </div>
+    </div>
+    <div class="descripcion">
+        <span class="user">{{'anuska_dev'}}</span>
+        <span class="texto">{{descripcion}}</span>
+    </div>
+</div>

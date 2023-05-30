@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./presentacion.component.scss']
 })
 export class PresentacionComponent {
-
+   descripcion = `¡Llevo 6 años trabajando como frontender!`
 }

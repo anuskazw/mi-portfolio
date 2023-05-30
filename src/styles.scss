@@ -1,6 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+// IMPORTS
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+// VARIABLES
+
+$negro-ligero: 828282;
+$negro-quinario: #6b6b6b;
+$negro-cuaternario: #555555;
+$negro-terciario: #404040;
+$negro-secundario: #2c2c2c;
+$negro-primario: #1a1a1a;
+$negro-principal: #000000;
+
+$gris-25-oscuro: #686868;
+$gris-nedruzco: #23282b;
+
+$blanco-oscuro: #828282;
+$blanco-quinario: #969696;
+$blanco-cuaternario: #aaaaaa;
+$blanco-terciario: #bfbfbf;
+$blanco-secundario: #d4d4d4;
+$blanco-primario: #e9e9e9;
+$blanco-principal: #f6f6f6;
+
+// https://coolors.co/001b2e-294c60-adb6c4-ffefd3-ffc49b
+
+/* SCSS HEX */
+$oxford-blue: #001b2eff;
+$charcoal: #294c60ff;
+$french-gray: #adb6c4ff;
+$papaya-whip: #ffefd3ff;
+$peach: #ffc49bff;
+
+
+// https://coolors.co/564787-dbcbd8-f2fdff-9ad4d6-101935
+
+// /* SCSS HEX */
+// $ultra-violet: #564787ff;
+// $thistle: #dbcbd8ff;
+// $azure-web: #f2fdffff;
+// $tiffany-blue: #9ad4d6ff;
+// $oxford-blue: #101935ff;
+
+
+// ESTILOS GENERALES
+
 * {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
+  .dark-view{
+    color: $blanco-secundario!important;
+    fill: $blanco-secundario!important;
+    background-color: $gris-nedruzco!important;
+  }
+
+  .light-view{
+    color: $gris-nedruzco!important;
+    fill: $gris-nedruzco!important;
+    background-color: $blanco-secundario!important;
+  }
 }
 
 html,
@@ -19,97 +77,3 @@ p {
   margin: 0px;
   padding: 0px;
 }
- $background-main: #ffffff;
- $background-secondary: #f5f5f5;
- $background-tertiary: #f0f0f0;
- $background-quaternary: #e0e0e0;
- $background-quinary: #d0d0d0;
-
- $color-main: #111111;
- $color-secondary: #333333;
- $color-tertiary: #666666;
- $color-quaternary: #999999;
- $color-quinary: #cccccc;
-
-// https://coolors.co/001b2e-294c60-adb6c4-ffefd3-ffc49b
-
-/* SCSS HEX */
-$oxford-blue: #001b2eff;
-$charcoal: #294c60ff;
-$french-gray: #adb6c4ff;
-$papaya-whip: #ffefd3ff;
-$peach: #ffc49bff;
-
-/* SCSS HSL */
-// $oxford-blue: hsla(205, 100%, 9%, 1);
-// $charcoal: hsla(202, 40%, 27%, 1);
-// $french-gray: hsla(217, 16%, 72%, 1);
-// $papaya-whip: hsla(38, 100%, 91%, 1);
-// $peach: hsla(25, 100%, 80%, 1);
-
-/* SCSS RGB */
-// $oxford-blue: rgba(0, 27, 46, 1);
-// $charcoal: rgba(41, 76, 96, 1);
-// $french-gray: rgba(173, 182, 196, 1);
-// $papaya-whip: rgba(255, 239, 211, 1);
-// $peach: rgba(255, 196, 155, 1);
-
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-right: linear-gradient(90deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-bottom: linear-gradient(180deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-left: linear-gradient(270deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-top-right: linear-gradient(45deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-bottom-right: linear-gradient(135deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-top-left: linear-gradient(225deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-bottom-left: linear-gradient(315deg, #001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-$gradient-radial: radial-gradient(#001b2eff, #294c60ff, #adb6c4ff, #ffefd3ff, #ffc49bff);
-
-
-// https://coolors.co/564787-dbcbd8-f2fdff-9ad4d6-101935
-
-/* CSS HEX */
-// --ultra-violet: #564787ff;
-// --thistle: #dbcbd8ff;
-// --azure-web: #f2fdffff;
-// --tiffany-blue: #9ad4d6ff;
-// --oxford-blue: #101935ff;
-
-// /* CSS HSL */
-// --ultra-violet: hsla(254, 31%, 40%, 1);
-// --thistle: hsla(311, 18%, 83%, 1);
-// --azure-web: hsla(189, 100%, 97%, 1);
-// --tiffany-blue: hsla(182, 42%, 72%, 1);
-// --oxford-blue: hsla(225, 54%, 14%, 1);
-
-// /* SCSS HEX */
-// $ultra-violet: #564787ff;
-// $thistle: #dbcbd8ff;
-// $azure-web: #f2fdffff;
-// $tiffany-blue: #9ad4d6ff;
-// $oxford-blue: #101935ff;
-
-// /* SCSS HSL */
-// $ultra-violet: hsla(254, 31%, 40%, 1);
-// $thistle: hsla(311, 18%, 83%, 1);
-// $azure-web: hsla(189, 100%, 97%, 1);
-// $tiffany-blue: hsla(182, 42%, 72%, 1);
-// $oxford-blue: hsla(225, 54%, 14%, 1);
-
-// /* SCSS RGB */
-// $ultra-violet: rgba(86, 71, 135, 1);
-// $thistle: rgba(219, 203, 216, 1);
-// $azure-web: rgba(242, 253, 255, 1);
-// $tiffany-blue: rgba(154, 212, 214, 1);
-// $oxford-blue: rgba(16, 25, 53, 1);
-
-/* SCSS Gradient */
-// $gradient-top: linear-gradient(0deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-right: linear-gradient(90deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-bottom: linear-gradient(180deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-left: linear-gradient(270deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-top-right: linear-gradient(45deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-bottom-right: linear-gradient(135deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-top-left: linear-gradient(225deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-bottom-left: linear-gradient(315deg, #564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
-// $gradient-radial: radial-gradient(#564787ff, #dbcbd8ff, #f2fdffff, #9ad4d6ff, #101935ff);
