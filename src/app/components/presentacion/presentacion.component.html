@@ -1,6 +1,10 @@
 <div class="container">
     <div class="wrapper">
-        <div class="wrapper-card">
+        <div *ngFor="let card of cards" class="wrapper-card">
+            <post-instagram [imagen]="{src: card.image.src, alt: card.image.alt}"
+                [descripcion]="card.descripcion"></post-instagram>
+        </div>
+        <!-- <div class="wrapper-card">
             <post-instagram [imagen]="{src: 'assets/images/post.jpg', alt:'lala'}"
                 [descripcion]="descripcion"></post-instagram>
         </div>
@@ -11,6 +15,6 @@
         <div class="wrapper-card">
             <post-instagram [imagen]="{src: 'assets/images/post.jpg', alt:'lala'}"
                 [descripcion]="descripcion"></post-instagram>
-        </div>
+        </div> -->
     </div>
 </div>

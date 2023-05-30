@@ -36,25 +36,23 @@
     transform: translateX(calc(-335px * 3));
   }
 }
-
+.container{
+  height: 100%;
+  padding: auto 5rem;
+}
 .wrapper {
   display: flex;
-
-  //   animation: rotate360 60s infinite forwards linear;
-//   animation: scroll 40s linear infinite;
-
-//   width: 1vw;
+  width: 75%;
+  height: 100%;
+  padding: 2rem;
+  overflow-y: scroll;
 
   .wrapper-card {
     transition: 0.4s ease-out;
     left: 0px;
     filter: grayscale(50%) blur(1px);
     top: 0;
-    // animation: display 5s infinite;
-  
- 
-    // opacity: 0.2; // Dim all other elements
-
+    
     &:not(:first-child) {
       margin-left: 20px;
     }
@@ -62,9 +60,8 @@
     &:hover {
       transform: translateY(-20px);
       transition: 0.4s ease-out;
-      // opacity: 1; // Dim all other elements
       z-index: 1;
-      filter: blur(0px);
+      filter: grayscale(0%) blur(0px);
     }
 
     &:hover ~ .wrapper-card {
