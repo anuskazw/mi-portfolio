@@ -1,6 +1,7 @@
 @import "./../../../../styles.scss";
 .card {
-  width: 335px;
+  position: relative;
+  width: 300px;
   border-radius: 8px;
   overflow: hidden;
   font-size: 14px;
@@ -11,6 +12,7 @@
   box-shadow: 0px 0px 18px 0px rgba(150, 150, 150, 1);
 
   .header {
+    position: relative;
     padding: 16px;
     // semibold
 
@@ -19,7 +21,7 @@
       height: 42px;
       padding: 3px 4px;
       border-radius: 50%;
-      background-color: $blanco-oscuro;
+      border: 0.25px solid $blanco-oscuro;
     }
     .title {
       padding: 0px 8px;
@@ -32,11 +34,18 @@
   }
 
   .imagen {
+    position: relative;
     width: fit-content;
-    height: 335px;
+    height: 300px;
+    img{
+      position: absolute;
+      width: inherit;
+      height: inherit;
+    }
   }
 
   .descripcion {
+    position: relative;
     padding: 0px 16px 16px;
 
     .user {
@@ -53,6 +62,7 @@
   }
 
   .footer {
+    position: relative;
     padding: 16px;
     display: flex;
     justify-content: space-between;
