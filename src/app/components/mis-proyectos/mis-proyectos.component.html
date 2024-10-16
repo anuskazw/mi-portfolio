@@ -1,1 +1,25 @@
-<h1> Mis proyectos </h1>
+<h1>Mis proyectos</h1>
+
+<div class="contenedor-principal">
+  <div class="botones-flotantes">
+    <button class="boton-icono" (click)="cambiarPagina('react')">
+      <img src="assets/logos/react.svg" alt="React" aria-label="React" width="20" height="20">
+    </button>
+    <button class="boton-icono" (click)="cambiarPagina('json')">
+      <img src="assets/logos/json.svg" alt="json" aria-label="json" width="20" height="20">
+    </button>
+    <button class="boton-icono" (click)="cambiarPagina('html')">
+      <img src="assets/logos/html5.svg" alt="HTML5" aria-label="HTML5" width="20" height="20">
+    </button>
+  </div>
+
+  <div class="paginas">
+    <div class="pagina codigo-fuente" *ngIf="paginaActual === 'json'">
+      <pre><code>{{ codigoJson }}</code></pre>
+    </div>
+    <div class="pagina codigo-fuente" *ngIf="paginaActual === 'react'">
+      <pre><code>{{ codigoReact }}</code></pre>
+    </div>
+    <!-- Añade más páginas según sea necesario -->
+  </div>
+</div>
