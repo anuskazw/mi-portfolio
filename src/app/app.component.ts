@@ -29,86 +29,86 @@ interface Project {
   standalone: false
 })
 export class AppComponent {
-  // === PERSONALIZA TUS DATOS AQUI ===
+  name = 'Ana María Caballero Gómez';
+  role = 'Frontend Developer';
+  yearsExperience = 7;
 
-  name = 'Tu Nombre';
-  role = 'Frontend Lead Developer';
-  yearsExperience = 8;
+  email = 'anuskazw@gmail.com';
+  github = 'https://github.com/anuskazw';
+  linkedin = 'https://www.linkedin.com/in/ana-m%C2%AA-caballero-8151b681';
 
-  email = 'tu@email.com';
-  github = 'https://github.com/tu-usuario';
-  linkedin = 'https://linkedin.com/in/tu-usuario';
-
-  bio = `Desarrollador Frontend Lead con más de ${this.yearsExperience} años de experiencia
-  creando aplicaciones web escalables y de alto rendimiento. Especializado en Angular y React,
-  con sólidos conocimientos en arquitectura de software y liderazgo técnico de equipos.`;
+  bio = `Desarrolladora Frontend con más de ${this.yearsExperience} años de experiencia en Angular, React,
+  Stencil y NodeJS. Especializada en crear aplicaciones web escalables con TypeScript y RxJS.
+  Conocimientos de backend con Java y Spring Boot, y bases de datos Oracle SQL, MySQL y MongoDB.
+  Apasionada por aprender nuevas tecnologías y comprometida con la calidad del producto.`;
 
   highlights = [
-    { icon: 'code', label: 'Líneas de código', value: '500K+' },
-    { icon: 'folder', label: 'Proyectos', value: '50+' },
-    { icon: 'users', label: 'Equipos liderados', value: '10+' },
-    { icon: 'coffee', label: 'Cafés', value: '∞' }
+    { icon: 'code', label: 'Años de experiencia', value: '7+' },
+    { icon: 'folder', label: 'Proyectos', value: '10+' },
+    { icon: 'tools', label: 'Tecnologías', value: '20+' },
+    { icon: 'star', label: 'Frameworks', value: '5+' }
   ];
 
   skills: Skill[] = [
     { name: 'Angular', level: 95, category: 'frontend' },
     { name: 'TypeScript', level: 95, category: 'frontend' },
-    { name: 'React', level: 85, category: 'frontend' },
+    { name: 'React', level: 80, category: 'frontend' },
     { name: 'JavaScript', level: 95, category: 'frontend' },
-    { name: 'HTML/CSS/SCSS', level: 90, category: 'frontend' },
+    { name: 'HTML5/CSS3/SCSS', level: 90, category: 'frontend' },
     { name: 'RxJS', level: 85, category: 'frontend' },
-    { name: 'Node.js', level: 80, category: 'backend' },
-    { name: 'Python', level: 70, category: 'backend' },
-    { name: 'Java', level: 65, category: 'backend' },
-    { name: 'SQL/NoSQL', level: 75, category: 'backend' },
-    { name: 'Git', level: 90, category: 'tools' },
-    { name: 'Docker', level: 70, category: 'tools' },
-    { name: 'CI/CD', level: 75, category: 'tools' },
-    { name: 'AWS/Azure', level: 65, category: 'tools' }
+    { name: 'Stencil/WebComponents', level: 80, category: 'frontend' },
+    { name: 'Bootstrap/Tailwind', level: 85, category: 'frontend' },
+    { name: 'Node.js', level: 75, category: 'backend' },
+    { name: 'Java/Spring Boot', level: 70, category: 'backend' },
+    { name: 'Oracle SQL/MySQL', level: 80, category: 'backend' },
+    { name: 'MongoDB', level: 65, category: 'backend' },
+    { name: 'Git/GitFlow', level: 90, category: 'tools' },
+    { name: 'AWS (CodeCommit/Pipeline)', level: 70, category: 'tools' },
+    { name: 'JIRA/Confluence', level: 90, category: 'tools' },
+    { name: 'Jenkins/CI-CD', level: 70, category: 'tools' }
   ];
 
   experiences: Experience[] = [
     {
-      role: 'Frontend Lead Developer',
-      company: 'Empresa Actual',
-      period: '2021 - Presente',
-      description: 'Liderazgo técnico de un equipo de 8 desarrolladores. Arquitectura de aplicaciones Angular enterprise. Implementación de mejores prácticas y estándares de código.',
-      technologies: ['Angular', 'TypeScript', 'RxJS', 'NgRx', 'Jest']
-    },
-    {
-      role: 'Senior Frontend Developer',
-      company: 'Empresa Anterior',
-      period: '2018 - 2021',
-      description: 'Desarrollo de aplicaciones SPA complejas. Migración de AngularJS a Angular. Mentoring de desarrolladores junior.',
-      technologies: ['Angular', 'React', 'TypeScript', 'Node.js']
+      role: 'Frontend Developer',
+      company: 'NTT DATA',
+      period: '2022 - 2023',
+      description: 'Desarrollo frontend con Angular para clientes del sector energético y bancario. Análisis de tareas, orientación y buenas prácticas al equipo. Soporte técnico y funcional. Gestión de tareas con JIRA (SCRUM) y documentación en Confluence.',
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'SCSS', 'Git', 'JIRA']
     },
     {
       role: 'Frontend Developer',
-      company: 'Primera Empresa',
-      period: '2016 - 2018',
-      description: 'Desarrollo de interfaces de usuario responsivas. Integración con APIs REST. Optimización de rendimiento.',
-      technologies: ['JavaScript', 'AngularJS', 'jQuery', 'Bootstrap']
+      company: 'Proyectos Anteriores',
+      period: '2017 - 2022',
+      description: 'Desarrollo de aplicaciones web para empresas energéticas, telecomunicaciones, transporte ferroviario y banca. Trabajo con equipos de diferentes tamaños en proyectos de 6 meses a 1.5 años.',
+      technologies: ['Angular', 'React', 'JavaScript', 'Oracle SQL', 'Redmine']
+    },
+    {
+      role: 'Junior Developer',
+      company: 'Inicio de Carrera',
+      period: '2016 - 2017',
+      description: 'Desarrollo de interfaces web responsivas. Integración con APIs REST. Control de versiones con Git y metodología Scrum.',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'jQuery', 'Bootstrap']
     }
   ];
 
   projects: Project[] = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Plataforma de comercio electrónico con más de 100K usuarios activos. Arquitectura micro-frontends.',
-      technologies: ['Angular', 'NgRx', 'Node.js', 'MongoDB'],
-      github: '#',
-      link: '#'
-    },
-    {
-      title: 'Dashboard Analytics',
-      description: 'Panel de análisis en tiempo real con visualizaciones interactivas y reportes personalizados.',
-      technologies: ['React', 'D3.js', 'TypeScript', 'GraphQL'],
+      title: 'Plataforma Sector Energético',
+      description: 'Aplicación web para gestión de servicios energéticos con dashboards interactivos y reportes en tiempo real.',
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'Oracle SQL'],
       github: '#'
     },
     {
-      title: 'Design System',
-      description: 'Sistema de diseño completo con más de 50 componentes reutilizables y documentación Storybook.',
-      technologies: ['Angular', 'SCSS', 'Storybook', 'Jest'],
+      title: 'Portal Banca Mayorista',
+      description: 'Sistema de gestión bancaria con autenticación segura, operaciones financieras y reporting.',
+      technologies: ['Angular', 'Java', 'Spring Boot', 'MySQL'],
+      github: '#'
+    },
+    {
+      title: 'App Transporte Ferroviario',
+      description: 'Aplicación para gestión de rutas y horarios con integración de APIs externas y notificaciones.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'WebSockets'],
       github: '#'
     }
   ];
