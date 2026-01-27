@@ -31,7 +31,7 @@ interface Project {
 export class AppComponent {
   name = 'Ana María Caballero Gómez';
   role = 'Full Stack Developer';
-  yearsExperience = 7;
+  yearsExperience = 8;
 
   email = 'anuskazw@gmail.com';
   github = 'https://github.com/anuskazw';
@@ -43,10 +43,10 @@ export class AppComponent {
   con WebSockets y Server Sent Events. Actualmente explorando desarrollo con IA (Cursor, Claude Code, MCPs).`;
 
   highlights = [
-    { icon: 'code', label: 'Años de experiencia', value: '7+' },
-    { icon: 'folder', label: 'Proyectos', value: '10+' },
-    { icon: 'tools', label: 'Tecnologías', value: '20+' },
-    { icon: 'star', label: 'Clientes enterprise', value: '6+' }
+    { icon: 'code', label: 'Años de experiencia', value: '8+' },
+    { icon: 'folder', label: 'Proyectos', value: '7+' },
+    { icon: 'tools', label: 'Tecnologías', value: '10+' },
+    { icon: 'star', label: 'Clientes enterprise', value: '5+' }
   ];
 
   skills: Skill[] = [
@@ -58,32 +58,31 @@ export class AppComponent {
     { name: 'RxJS', level: 85, category: 'frontend' },
     { name: 'WebSockets/SSE', level: 80, category: 'frontend' },
     { name: 'Node.js', level: 75, category: 'backend' },
-    { name: 'Java/Spring Boot', level: 70, category: 'backend' },
-    { name: 'Oracle SQL/MySQL', level: 80, category: 'backend' },
-    { name: 'MongoDB', level: 65, category: 'backend' },
+    { name: 'Java/Spring Boot', level: 60, category: 'backend' },
+    { name: 'Oracle SQL/MySQL', level: 60, category: 'backend' },
     { name: 'Git/GitFlow', level: 90, category: 'tools' },
     { name: 'JIRA/Confluence', level: 90, category: 'tools' },
     { name: 'IA (Cursor/Claude Code)', level: 75, category: 'tools' },
-    { name: 'AWS/CI-CD', level: 70, category: 'tools' }
+    { name: 'AWS/CI-CD', level: 50, category: 'tools' }
   ];
 
   experiences: Experience[] = [
     {
-      role: 'Frontend Developer',
+      role: 'Full Stack Developer',
       company: 'Vitaly - Preving Investments Group',
       period: '2025 - Actualidad',
       description: 'Desarrollo interno en el equipo de Vitaly. Migraciones de pantallas antiguas, resolución de incidencias en caliente y optimización del rendimiento para una plataforma con alta carga de planificadores de citas médicas. Últimos 6 meses trabajando con MCPs y desarrollo asistido por IA (Cursor, Claude Code, v0).',
       technologies: ['Angular 14', 'TypeScript', 'RxJS', 'IA/MCPs', 'Cursor']
     },
     {
-      role: 'Frontend Developer',
+      role: 'Full Stack Developer',
       company: 'BETWEEN TECHNOLOGY → Vitaly/Preving',
       period: '2023 - 2025',
       description: 'Externa para el cliente Vitaly de Preving Investments Group durante 1.5 años. Desarrollo de pantallas nuevas con Angular 14 y migraciones de pantallas antiguas al nuevo framework.',
       technologies: ['Angular 14', 'TypeScript', 'SCSS', 'Git', 'JIRA']
     },
     {
-      role: 'Junior → Engineer Developer',
+      role: 'Junior → Engineer Frontend Developer',
       company: 'NTT DATA',
       period: '2017 - 2023',
       description: 'Crecimiento profesional de Junior a Engineer Developer trabajando con grandes clientes: Repsol (TPV datáfonos), Banca Santander (altas de clientes), Orange/Amena (proyecto complejo de telecomunicaciones), VECI - Viajes El Corte Inglés (intranet con gestión de roles), y Renfe (aplicación de compra de billetes).',

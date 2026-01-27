@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -30,6 +31,8 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -39,6 +42,10 @@ body {
 
 ::-webkit-scrollbar {
   width: 8px;
+
+  @media (max-width: 768px) {
+    width: 4px;
+  }
 }
 
 ::-webkit-scrollbar-track {
@@ -58,20 +65,50 @@ a {
   color: var(--accent);
   text-decoration: none;
   transition: color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
 
   &:hover {
     color: var(--accent-hover);
   }
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 16px;
+  }
 }
 
 .section {
   padding: 100px 0;
+
+  @media (max-width: 968px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 50px 0;
+  }
 }
 
 .section-title {
@@ -80,6 +117,14 @@ a {
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 
   &::after {
     content: '';
@@ -90,6 +135,12 @@ a {
     height: 4px;
     background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
     border-radius: 2px;
+
+    @media (max-width: 480px) {
+      width: 50px;
+      height: 3px;
+      bottom: -6px;
+    }
   }
 }
 
@@ -97,6 +148,16 @@ a {
   color: var(--text-secondary);
   font-size: 1.1rem;
   margin-bottom: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .gradient-text {
@@ -117,6 +178,13 @@ a {
   cursor: pointer;
   transition: all 0.3s ease;
   border: none;
+  -webkit-tap-highlight-color: transparent;
+
+  @media (max-width: 480px) {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    gap: 6px;
+  }
 
   &-primary {
     background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
@@ -125,6 +193,15 @@ a {
     &:hover {
       transform: translateY(-2px);
       box-shadow: 0 10px 30px var(--accent-glow);
+
+      @media (max-width: 768px) {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 15px var(--accent-glow);
+      }
+    }
+
+    &:active {
+      transform: translateY(0);
     }
   }
 
@@ -140,12 +217,22 @@ a {
   }
 }
 
-@media (max-width: 768px) {
-  .section {
-    padding: 60px 0;
+// Utility classes for responsive visibility
+.hide-mobile {
+  @media (max-width: 768px) {
+    display: none !important;
   }
+}
 
-  .section-title {
-    font-size: 1.75rem;
+.hide-desktop {
+  @media (min-width: 769px) {
+    display: none !important;
+  }
+}
+
+// Prevent body scroll when mobile menu is open
+body.menu-open {
+  @media (max-width: 768px) {
+    overflow: hidden;
   }
 }
