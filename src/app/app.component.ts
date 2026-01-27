@@ -95,29 +95,35 @@ export class AppComponent {
     {
       title: 'App Renfe - Compra de Billetes',
       description: 'Desarrollo del flujo de compra de billetes y gestión de tipos de billetes para la aplicación móvil de Renfe. Interfaz de usuario completa para el proceso de reserva y pago.',
-      technologies: ['React', 'TypeScript', 'API REST'],
-      link: 'https://www.docomobility.com/app'
+      technologies: ['React', 'TypeScript', 'API REST', 'RxJS', 'Figma', 'JIRA','Confluence', 'Drupal'],
+      link: 'https://www.docomobility.com/app/plan'
     },
     {
       title: 'Intranet VECI - Viajes El Corte Inglés',
       description: 'Desarrollo de intranet corporativa con alta complejidad de gestión de roles y permisos. Sistema para limitar o permitir funcionalidades según el perfil del usuario.',
-      technologies: ['Angular', 'TypeScript', 'RxJS', 'SCSS']
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'SCSS', 'Figma', 'JIRA', 'Confluence', 'Headless CMS (Directus)']
     },
     {
       title: 'TPV Datáfonos - Repsol',
       description: 'Desarrollo de TPV para datáfonos en JavaScript vanilla (ES3), consolidando bases sólidas de JS. En paralelo, desarrollo del frontend Angular para monitores PC. Implementación de tiempo real con Server Sent Events y WebSockets para cobro de gasolinas.',
-      technologies: ['JavaScript ES3', 'Angular', 'WebSockets', 'SSE']
+      technologies: ['JavaScript ES3', 'JavaScript (ES3)', 'TypeScript', 'Angular', 'WebSockets', 'SSE', 'Figma', 'JIRA','Confluence']
     },
     {
       title: 'Portal Banca Santander',
       description: 'Trabajo en grandes equipos desarrollando el flujo de altas de clientes que quieren abrir una cuenta con ofertas promocionales.',
-      technologies: ['Angular', 'TypeScript', 'Java', 'Oracle SQL']
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'SCSS', 'Figma', 'JIRA','Confluence']
     },
     {
-      title: 'Plataforma Orange/Amena',
-      description: 'Proyecto complejo de telecomunicaciones para la gestión de servicios y clientes de la operadora.',
-      technologies: ['Angular', 'TypeScript', 'RxJS', 'API REST']
-    }
+      title: 'Intranet Vitaly - Preving Investments Group',
+      description: 'Migración y mejoras de pantallas existentes en el intranet corporativo de Preving Investments Group. Sistema para planificar citas médicas y varias funcionalidades según el perfil del usuario. Resolución de incidencias.',
+      technologies: ['Angular', 'TypeScript', 'Java 8', 'Java 17', 'Spring Boot', 'Oracle SQL', 'RxJS', 'SCSS', 'Git', 'Redmine', 'MCPs', 'Cursor']
+    },
+    {
+      title: 'Portal Liga de Badminton - Personal',
+      description: 'Portal para la gestión de inscripciones a torneos de badminton. Sistema para la gestión de inscripciones, partidos y resultados. Incluye sistema de autenticación y autorización.',
+      technologies: ['Claude Code', 'MCPs', 'TypeScript', 'RxJS', 'SCSS'],
+      link: 'https://liga-badminton.vercel.app/'
+    },
   ];
 
   navItems = [
