@@ -30,16 +30,16 @@ interface Project {
 })
 export class AppComponent {
   name = 'Ana María Caballero Gómez';
-  role = 'Frontend Developer';
+  role = 'Full Stack Developer';
   yearsExperience = 7;
 
   email = 'anuskazw@gmail.com';
   github = 'https://github.com/anuskazw';
   linkedin = 'https://www.linkedin.com/in/ana-m%C2%AA-caballero-8151b681';
 
-  bio = `Desarrolladora Frontend con más de ${this.yearsExperience} años de experiencia en Angular, React,
-  Stencil y NodeJS. Especializada en crear aplicaciones web escalables con TypeScript y RxJS.
-  Conocimientos de backend con Java y Spring Boot, y bases de datos Oracle SQL, MySQL y MongoDB.
+  bio = `Desarrolladora Full Stack con más de ${this.yearsExperience} años de experiencia.
+  Especializada en Frontend con Angular, React y TypeScript, con sólidos conocimientos de Backend
+  en Java 17, Spring Boot y Node.js. Experiencia en bases de datos Oracle SQL, MySQL y MongoDB.
   Apasionada por aprender nuevas tecnologías y comprometida con la calidad del producto.`;
 
   highlights = [
@@ -70,45 +70,58 @@ export class AppComponent {
 
   experiences: Experience[] = [
     {
-      role: 'Frontend Developer',
+      role: 'Full Stack Developer',
       company: 'NTT DATA',
       period: '2022 - 2023',
-      description: 'Desarrollo frontend con Angular para clientes del sector energético y bancario. Análisis de tareas, orientación y buenas prácticas al equipo. Soporte técnico y funcional. Gestión de tareas con JIRA (SCRUM) y documentación en Confluence.',
-      technologies: ['Angular', 'TypeScript', 'RxJS', 'SCSS', 'Git', 'JIRA']
+      description: 'Desarrollo full stack para clientes del sector energético y bancario. Frontend con Angular y backend con Java 17 y Spring Boot. Creación de endpoints eficaces con consultas complejas a Oracle SQL. Orientación y buenas prácticas al equipo. Gestión con JIRA (SCRUM) y documentación en Confluence.',
+      technologies: ['Angular', 'Java 17', 'Spring Boot', 'Oracle SQL', 'RxJS', 'Git']
+    },
+    {
+      role: 'Full Stack Developer',
+      company: 'Sector Telecomunicaciones',
+      period: '2020 - 2022',
+      description: 'Desarrollo de aplicaciones web completas para compañías telefónicas. Implementación de APIs REST con Node.js, integración con bases de datos MySQL y MongoDB. Frontend con React y Angular.',
+      technologies: ['React', 'Node.js', 'MySQL', 'MongoDB', 'TypeScript', 'AWS']
     },
     {
       role: 'Frontend Developer',
-      company: 'Proyectos Anteriores',
-      period: '2017 - 2022',
-      description: 'Desarrollo de aplicaciones web para empresas energéticas, telecomunicaciones, transporte ferroviario y banca. Trabajo con equipos de diferentes tamaños en proyectos de 6 meses a 1.5 años.',
-      technologies: ['Angular', 'React', 'JavaScript', 'Oracle SQL', 'Redmine']
+      company: 'Sector Transporte y Banca',
+      period: '2018 - 2020',
+      description: 'Desarrollo frontend para empresas de transporte ferroviario y banca mayorista. Aplicaciones SPA con Angular, integración con APIs REST y WebSockets para datos en tiempo real.',
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'WebSockets', 'Bootstrap']
     },
     {
       role: 'Junior Developer',
       company: 'Inicio de Carrera',
-      period: '2016 - 2017',
-      description: 'Desarrollo de interfaces web responsivas. Integración con APIs REST. Control de versiones con Git y metodología Scrum.',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'jQuery', 'Bootstrap']
+      period: '2016 - 2018',
+      description: 'Desarrollo de interfaces web responsivas. Integración con APIs REST. Primeros pasos con Java y bases de datos SQL. Control de versiones con Git y metodología Scrum.',
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Java', 'SQL', 'Git']
     }
   ];
 
   projects: Project[] = [
     {
       title: 'Plataforma Sector Energético',
-      description: 'Aplicación web para gestión de servicios energéticos con dashboards interactivos y reportes en tiempo real.',
-      technologies: ['Angular', 'TypeScript', 'RxJS', 'Oracle SQL'],
+      description: 'Aplicación full stack para gestión de servicios energéticos. Backend con Java 17 y Spring Boot, endpoints con consultas complejas a Oracle SQL. Frontend con Angular y dashboards en tiempo real.',
+      technologies: ['Angular', 'Java 17', 'Spring Boot', 'Oracle SQL'],
       github: '#'
     },
     {
       title: 'Portal Banca Mayorista',
-      description: 'Sistema de gestión bancaria con autenticación segura, operaciones financieras y reporting.',
-      technologies: ['Angular', 'Java', 'Spring Boot', 'MySQL'],
+      description: 'Sistema de gestión bancaria completo con autenticación segura, APIs REST, operaciones financieras y reporting. Arquitectura full stack con microservicios.',
+      technologies: ['Angular', 'Java', 'Spring Boot', 'MySQL', 'JWT'],
       github: '#'
     },
     {
       title: 'App Transporte Ferroviario',
-      description: 'Aplicación para gestión de rutas y horarios con integración de APIs externas y notificaciones.',
+      description: 'Aplicación full stack para gestión de rutas y horarios. Backend con Node.js y MongoDB, frontend con React. WebSockets para actualizaciones en tiempo real.',
       technologies: ['React', 'Node.js', 'MongoDB', 'WebSockets'],
+      github: '#'
+    },
+    {
+      title: 'Sistema Telecomunicaciones',
+      description: 'Plataforma de gestión de clientes y servicios para compañía telefónica. APIs REST con Node.js, base de datos MySQL y frontend con Angular.',
+      technologies: ['Angular', 'Node.js', 'MySQL', 'AWS', 'TypeScript'],
       github: '#'
     }
   ];
