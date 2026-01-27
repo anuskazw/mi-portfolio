@@ -37,92 +37,86 @@ export class AppComponent {
   github = 'https://github.com/anuskazw';
   linkedin = 'https://www.linkedin.com/in/ana-m%C2%AA-caballero-8151b681';
 
-  bio = `Desarrolladora Full Stack con más de ${this.yearsExperience} años de experiencia.
-  Especializada en Frontend con Angular, React y TypeScript, con sólidos conocimientos de Backend
-  en Java 17, Spring Boot y Node.js. Experiencia en bases de datos Oracle SQL, MySQL y MongoDB.
-  Apasionada por aprender nuevas tecnologías y comprometida con la calidad del producto.`;
+  bio = `Desarrolladora Full Stack con más de ${this.yearsExperience} años de experiencia, especializada
+  principalmente en Frontend. Dominio avanzado de Angular, React y JavaScript (desde ES3 hasta las últimas
+  versiones). Conocimientos sólidos de Backend con Java, Spring Boot y Node.js. Experiencia en tiempo real
+  con WebSockets y Server Sent Events. Actualmente explorando desarrollo con IA (Cursor, Claude Code, MCPs).`;
 
   highlights = [
     { icon: 'code', label: 'Años de experiencia', value: '7+' },
     { icon: 'folder', label: 'Proyectos', value: '10+' },
     { icon: 'tools', label: 'Tecnologías', value: '20+' },
-    { icon: 'star', label: 'Frameworks', value: '5+' }
+    { icon: 'star', label: 'Clientes enterprise', value: '6+' }
   ];
 
   skills: Skill[] = [
     { name: 'Angular', level: 95, category: 'frontend' },
     { name: 'TypeScript', level: 95, category: 'frontend' },
-    { name: 'React', level: 80, category: 'frontend' },
-    { name: 'JavaScript', level: 95, category: 'frontend' },
+    { name: 'React', level: 85, category: 'frontend' },
+    { name: 'JavaScript (ES3-ES2024)', level: 95, category: 'frontend' },
     { name: 'HTML5/CSS3/SCSS', level: 90, category: 'frontend' },
     { name: 'RxJS', level: 85, category: 'frontend' },
-    { name: 'Stencil/WebComponents', level: 80, category: 'frontend' },
-    { name: 'Bootstrap/Tailwind', level: 85, category: 'frontend' },
+    { name: 'WebSockets/SSE', level: 80, category: 'frontend' },
     { name: 'Node.js', level: 75, category: 'backend' },
     { name: 'Java/Spring Boot', level: 70, category: 'backend' },
     { name: 'Oracle SQL/MySQL', level: 80, category: 'backend' },
     { name: 'MongoDB', level: 65, category: 'backend' },
     { name: 'Git/GitFlow', level: 90, category: 'tools' },
-    { name: 'AWS (CodeCommit/Pipeline)', level: 70, category: 'tools' },
     { name: 'JIRA/Confluence', level: 90, category: 'tools' },
-    { name: 'Jenkins/CI-CD', level: 70, category: 'tools' }
+    { name: 'IA (Cursor/Claude Code)', level: 75, category: 'tools' },
+    { name: 'AWS/CI-CD', level: 70, category: 'tools' }
   ];
 
   experiences: Experience[] = [
     {
-      role: 'Full Stack Developer',
-      company: 'NTT DATA',
-      period: '2022 - 2023',
-      description: 'Desarrollo full stack para clientes del sector energético y bancario. Frontend con Angular y backend con Java 17 y Spring Boot. Creación de endpoints eficaces con consultas complejas a Oracle SQL. Orientación y buenas prácticas al equipo. Gestión con JIRA (SCRUM) y documentación en Confluence.',
-      technologies: ['Angular', 'Java 17', 'Spring Boot', 'Oracle SQL', 'RxJS', 'Git']
-    },
-    {
-      role: 'Full Stack Developer',
-      company: 'Sector Telecomunicaciones',
-      period: '2020 - 2022',
-      description: 'Desarrollo de aplicaciones web completas para compañías telefónicas. Implementación de APIs REST con Node.js, integración con bases de datos MySQL y MongoDB. Frontend con React y Angular.',
-      technologies: ['React', 'Node.js', 'MySQL', 'MongoDB', 'TypeScript', 'AWS']
+      role: 'Frontend Developer',
+      company: 'Vitaly - Preving Investments Group',
+      period: '2025 - Actualidad',
+      description: 'Desarrollo interno en el equipo de Vitaly. Migraciones de pantallas antiguas, resolución de incidencias en caliente y optimización del rendimiento para una plataforma con alta carga de planificadores de citas médicas. Últimos 6 meses trabajando con MCPs y desarrollo asistido por IA (Cursor, Claude Code, v0).',
+      technologies: ['Angular 14', 'TypeScript', 'RxJS', 'IA/MCPs', 'Cursor']
     },
     {
       role: 'Frontend Developer',
-      company: 'Sector Transporte y Banca',
-      period: '2018 - 2020',
-      description: 'Desarrollo frontend para empresas de transporte ferroviario y banca mayorista. Aplicaciones SPA con Angular, integración con APIs REST y WebSockets para datos en tiempo real.',
-      technologies: ['Angular', 'TypeScript', 'RxJS', 'WebSockets', 'Bootstrap']
+      company: 'BETWEEN TECHNOLOGY → Vitaly/Preving',
+      period: '2023 - 2025',
+      description: 'Externa para el cliente Vitaly de Preving Investments Group durante 1.5 años. Desarrollo de pantallas nuevas con Angular 14 y migraciones de pantallas antiguas al nuevo framework.',
+      technologies: ['Angular 14', 'TypeScript', 'SCSS', 'Git', 'JIRA']
     },
     {
-      role: 'Junior Developer',
-      company: 'Inicio de Carrera',
-      period: '2016 - 2018',
-      description: 'Desarrollo de interfaces web responsivas. Integración con APIs REST. Primeros pasos con Java y bases de datos SQL. Control de versiones con Git y metodología Scrum.',
-      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Java', 'SQL', 'Git']
+      role: 'Junior → Engineer Developer',
+      company: 'NTT DATA',
+      period: '2017 - 2023',
+      description: 'Crecimiento profesional de Junior a Engineer Developer trabajando con grandes clientes: Repsol (TPV datáfonos), Banca Santander (altas de clientes), Orange/Amena (proyecto complejo de telecomunicaciones), VECI - Viajes El Corte Inglés (intranet con gestión de roles), y Renfe (aplicación de compra de billetes).',
+      technologies: ['Angular', 'React', 'JavaScript', 'Java', 'Oracle SQL', 'WebSockets']
     }
   ];
 
   projects: Project[] = [
     {
-      title: 'Plataforma Sector Energético',
-      description: 'Aplicación full stack para gestión de servicios energéticos. Backend con Java 17 y Spring Boot, endpoints con consultas complejas a Oracle SQL. Frontend con Angular y dashboards en tiempo real.',
-      technologies: ['Angular', 'Java 17', 'Spring Boot', 'Oracle SQL'],
-      github: '#'
+      title: 'App Renfe - Compra de Billetes',
+      description: 'Desarrollo del flujo de compra de billetes y gestión de tipos de billetes para la aplicación móvil de Renfe. Interfaz de usuario completa para el proceso de reserva y pago.',
+      technologies: ['React', 'TypeScript', 'API REST'],
+      link: 'https://www.docomobility.com/app'
     },
     {
-      title: 'Portal Banca Mayorista',
-      description: 'Sistema de gestión bancaria completo con autenticación segura, APIs REST, operaciones financieras y reporting. Arquitectura full stack con microservicios.',
-      technologies: ['Angular', 'Java', 'Spring Boot', 'MySQL', 'JWT'],
-      github: '#'
+      title: 'Intranet VECI - Viajes El Corte Inglés',
+      description: 'Desarrollo de intranet corporativa con alta complejidad de gestión de roles y permisos. Sistema para limitar o permitir funcionalidades según el perfil del usuario.',
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'SCSS']
     },
     {
-      title: 'App Transporte Ferroviario',
-      description: 'Aplicación full stack para gestión de rutas y horarios. Backend con Node.js y MongoDB, frontend con React. WebSockets para actualizaciones en tiempo real.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'WebSockets'],
-      github: '#'
+      title: 'TPV Datáfonos - Repsol',
+      description: 'Desarrollo de TPV para datáfonos en JavaScript vanilla (ES3), consolidando bases sólidas de JS. En paralelo, desarrollo del frontend Angular para monitores PC. Implementación de tiempo real con Server Sent Events y WebSockets para cobro de gasolinas.',
+      technologies: ['JavaScript ES3', 'Angular', 'WebSockets', 'SSE']
     },
     {
-      title: 'Sistema Telecomunicaciones',
-      description: 'Plataforma de gestión de clientes y servicios para compañía telefónica. APIs REST con Node.js, base de datos MySQL y frontend con Angular.',
-      technologies: ['Angular', 'Node.js', 'MySQL', 'AWS', 'TypeScript'],
-      github: '#'
+      title: 'Portal Banca Santander',
+      description: 'Trabajo en grandes equipos desarrollando el flujo de altas de clientes que quieren abrir una cuenta con ofertas promocionales.',
+      technologies: ['Angular', 'TypeScript', 'Java', 'Oracle SQL']
+    },
+    {
+      title: 'Plataforma Orange/Amena',
+      description: 'Proyecto complejo de telecomunicaciones para la gestión de servicios y clientes de la operadora.',
+      technologies: ['Angular', 'TypeScript', 'RxJS', 'API REST']
     }
   ];
 
