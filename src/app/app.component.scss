@@ -651,7 +651,8 @@
     text-align: right;
 
     .timeline-content::before {
-      right: -8px;
+      right: -16px;
+      left: auto;
     }
 
     .timeline-tech {
@@ -662,8 +663,10 @@
       text-align: left;
 
       .timeline-content::before {
-        left: -8px;
+        left: -16px;
         right: auto;
+        border-left-color: transparent;
+        border-right-color: var(--border-color);
       }
 
       .timeline-tech {
@@ -677,11 +680,19 @@
     text-align: left;
 
     .timeline-content::before {
-      left: -8px;
+      left: -16px;
+      border-left-color: transparent;
+      border-right-color: var(--border-color);
     }
 
     @media (max-width: 768px) {
       left: 0;
+
+      .timeline-content::before {
+        left: -16px;
+        border-left-color: transparent;
+        border-right-color: var(--border-color);
+      }
     }
   }
 
@@ -733,11 +744,6 @@
     height: 0;
     border: 8px solid transparent;
     border-left-color: var(--border-color);
-
-    @media (max-width: 768px) {
-      border-left-color: transparent;
-      border-right-color: var(--border-color);
-    }
   }
 }
 
