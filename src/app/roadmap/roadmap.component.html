@@ -1,0 +1,47 @@
+<section class="roadmap-page">
+  <div class="container">
+    <h2 class="section-title">Roadmap</h2>
+    <p class="section-subtitle">Rutas de aprendizaje de roadmap.sh</p>
+
+    <!-- Main Tabs -->
+    <div class="tabs">
+      @for (tab of tabs; track tab.id) {
+        <button
+          class="tab-btn"
+          [class.active]="activeTabId === tab.id"
+          (click)="selectTab(tab.id)">
+          {{ tab.label }}
+        </button>
+      }
+    </div>
+
+    <!-- Sub Tabs (only for Frontend) -->
+    @if (activeTab.subTabs) {
+      <div class="sub-tabs">
+        <button
+          class="sub-tab-btn"
+          [class.active]="!activeSubTabId"
+          (click)="activeSubTabId = null">
+          General
+        </button>
+        @for (sub of activeTab.subTabs; track sub.id) {
+          <button
+            class="sub-tab-btn"
+            [class.active]="activeSubTabId === sub.id"
+            (click)="selectSubTab(sub.id)">
+            {{ sub.label }}
+          </button>
+        }
+      </div>
+    }
+
+    <!-- Iframe Container -->
+    <div class="iframe-container">
+      <iframe
+        [src]="currentUrl"
+        title="Roadmap"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
