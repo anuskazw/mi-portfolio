@@ -71,8 +71,8 @@ export class HomeComponent {
       role: 'Full Stack Developer',
       company: 'Vitaly - Preving Investments Group',
       period: '2025 - Actualidad',
-      description: 'Desarrollo interno en el equipo de Vitaly. Migraciones de pantallas antiguas, resolución de incidencias en caliente y optimización del rendimiento para una plataforma con alta carga de planificadores de citas médicas. Últimos 6 meses trabajando con MCPs y desarrollo asistido por IA (Cursor, Claude Code, v0).',
-      technologies: ['Angular 14', 'TypeScript', 'RxJS', 'IA/MCPs', 'Cursor']
+      description: 'Desarrollo interno en el equipo de Vitaly. Proyectos grandes de distintas versiones (JSP, Angular 13 y 14) con backend en Java, Spring Boot y Gradle. Migraciones de pantallas antiguas, resolución de incidencias en caliente y optimización del rendimiento para una plataforma con alta carga de planificadores de citas médicas. Desde hace año y medio trabajo con Claude para resolver incidencias, desarrollar evolutivos y hacer análisis específicos.',
+      technologies: ['Angular 13', 'Angular 14', 'JSP', 'TypeScript', 'RxJS', 'Java', 'Spring Boot', 'Gradle', 'Claude', 'Cursor']
     },
     {
       role: 'Full Stack Developer',
